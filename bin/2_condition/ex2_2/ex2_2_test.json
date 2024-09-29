@@ -1,0 +1,8 @@
+[
+    {
+        "parent": "2_condition",
+        "testid": 1,
+        "input": "-10000",
+        "output": "0"
+    }
+]
