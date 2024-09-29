@@ -1,0 +1,32 @@
+[
+    {
+        "parent": "2_condition",
+        "testid": 1,
+        "input": "-10000",
+        "output": "-10000 is even"
+    },
+    {
+        "parent": "2_condition",
+        "testid": 2,
+        "input": "10000",
+        "output": "10000 is even"
+    },
+    {
+        "parent": "2_condition",
+        "testid": 3,
+        "input": "1",
+        "output": "1 is odd"
+    },
+    {
+        "parent": "2_condition",
+        "testid": 4,
+        "input": "2",
+        "output": "2 is even"
+    },
+    {
+        "parent": "2_condition",
+        "testid": 5,
+        "input": "0",
+        "output": "0 is even"
+    }
+]

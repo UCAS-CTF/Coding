@@ -1,0 +1,28 @@
+{
+    "1_basic":{
+        "name": "C语言基础语法", 
+        "ex1_1":{
+            
+        }
+    },
+    "2_condition":{
+        "name": "C语言条件语句",
+        "ex2_1":{
+            "name": "判断奇偶",
+            "test_file": "ex2_1_test.json"
+        },
+        "ex2_2":{
+            "name": "判断闰年",
+            "test_file": "ex2_2_test.json"
+        }
+    },
+    "3_loop":{
+        "name": "C语言循环语句",
+        "ex1":{
+            
+        },
+        "ex2":{
+            
+        }
+    }
+}
