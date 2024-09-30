@@ -21,6 +21,7 @@ C语言是一种计算机程序设计语言，由Dennis Ritchie于1972年编写�
 
 <details>
 <summary>C语言与高级语言</summary>
+<br>
 <div markdown="1">
 
 **语言是计算机程序设计语言，它定义了计算机程序如何被构建、运行、解释等，通俗地说就是定义了计算机工作的逻辑**。一般来说，语言分为高级语言和低级语言。其中**如C、C++、Java、Python等是高级语言**，人们可以用他们有效地去理解、表达更复杂的程序；而**汇编语言等低级语言**只能有效表达简单的程序，这些内容在后续都会触及。
@@ -74,6 +75,7 @@ gcc hello.c -o hello && ./hello
 
 <details>
 <summary>输入与输出</summary>
+<br>
 <div markdown="1">
 
 在C语言中，输入和输出我们可以通过函数`scanf()`和`printf()`来实现。
@@ -101,6 +103,7 @@ int main(){
 
 <details>
 <summary>补充完整下述程序并输出数字</summary>
+<br>
 <div markdown="1">
 
 ```c
@@ -112,6 +115,10 @@ int main(){
     float d = 3.1415926;
     double e = 3.14159265358979323846;
     long double f = 3.141592653589793238462643383279502884197169399375105820974944592307816406286;
+<<<<<<< HEAD
+    // TODO
+=======
+>>>>>>> 32bc7bf0f67acb1867dfd944930d0e8fa3540f62
     // 输出a、b、c、d、e、f
     return 0;
 }
@@ -133,12 +140,14 @@ f = 3.141593
 
 <details>
 <summary>补充完整下述程序并输出不同进制下的数字</summary>
+<br>
 <div markdown="1">
 
 ```c
 #include <stdio.h>
 int main(){
     int a = 123;
+    // TODO
     // 分别输出a的十进制、八进制、十六进制
     return 0;
 }
@@ -160,12 +169,14 @@ a = 0x7b
 
 <details>
 <summary>补充完整下述程序并根据输入数字输出数字</summary>
+<br>
 <div markdown="1">
 
 ```c
 #include <stdio.h>
 int main(){
     int a;
+    // TODO
     // 输入一个数字并存储到a中
     printf("%d\n", a);
     return 0;
@@ -194,6 +205,7 @@ int main(){
 
 <details>
 <summary>补充完整下述程序并根据输入字符输出字符</summary>
+<br>
 <div markdown="1">
 
 ```c
@@ -201,6 +213,7 @@ int main(){
 int main(){
     char a, b, c;
     printf("Please input 3 characters: ");
+    // TODO
     // 使用scanf()读取三个字符，分别存储到a、b、c中，观察输出结果
     printf("Your characters are %c, %c and %c\n", a, b, c);
     return 0;
@@ -218,6 +231,7 @@ int main(){
 
 <details>
 <summary>按顺序输出（当前编译器下）常见类型的存储大小</summary>
+<br>
 <div markdown="1">
 
 常见的数据类型：`char`, `unsigned char`, `signed char`, `int`, `unsigned int`, `short`, `unsigned short`, `long`, `unsigned long`
@@ -231,10 +245,11 @@ int main(){
 
 ### 练习6：浮点数的表示
 
-> 请提前学习什么是浮点数以及IEEE754浮点数标准。可以参考的：https://blog.csdn.net/weixin_45863060/article/details/125054244
+> 请提前学习什么是浮点数，以及可以了解IEEE754浮点数标准。可以参考的：https://blog.csdn.net/weixin_45863060/article/details/125054244
 
 <details>
 <summary>请根据要求补充完整下述代码</summary>
+<br>
 <div markdown="1">
 
 ```c
@@ -247,6 +262,7 @@ int main(){
     float c = 3.14e-6;
     float d = 3.14e+6;
     float e = -3.14e-6;
+    // TODO
     // 以指数形式输出a
     // 以一般形式输出b，但是仅保留小数点后3位
     // 以一般形式输出c，右对齐并占用宽度为10，保留2位小数
@@ -271,6 +287,7 @@ e = -3.140000e-06
 
 <details>
 <summary>类型转换</summary>
+<br>
 <div markdown="1">
 
 提醒：
@@ -295,6 +312,7 @@ short                                      |
 
 <details>
 <summary>根据输入按序输出要求的结果</summary>
+<br>
 <div markdown="1">
 
 ```c
@@ -303,7 +321,7 @@ short                                      |
 int main() {
     double a, b;
     scanf("%lf %lf", &a, &b);
-
+    // TODO
     // 输出a和b的加减乘除结果
     // 输出 a 除以 b整数部分 的结果
     // 输出 a整数部分 除以 b 的结果
