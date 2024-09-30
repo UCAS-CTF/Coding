@@ -201,7 +201,7 @@ int main(){
 </div>
 </details>
 
-### 练习4：字符吞吐机（`scanf`对`\n`的处理）
+### 练习4：字符吞吐机（`scanf`对`\n`、` `等输入缓冲区中特殊字符的处理）
 
 <details>
 <summary>补充完整下述程序并根据输入字符输出字符</summary>

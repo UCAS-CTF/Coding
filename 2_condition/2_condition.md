@@ -1,4 +1,4 @@
-# C语言-条件语句
+# Part2：C语言-条件语句
 
 Author: [sikesibian](https://github.com/sikesibian)
 
@@ -450,7 +450,7 @@ int main() {
 }
 ```
 
-可以梳理出上述代码中的逻辑链可视化如下（Y为真，N为假）：
+可以梳理出上述代码中的逻辑链（二元决策图）可视化如下（Y为真，N为假）：
 ```
     +-------+
     | score |
