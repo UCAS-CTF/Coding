@@ -29,7 +29,7 @@ for(初始化语句 ; 循环条件 ; 循环步长){
 ### 练习1：阶乘（for循环的基本使用）
 
 <details>
-<summary>输入一个整数$n$，输出$n!$的结果。</summary>
+<summary>输入一个整数n，输出n!的结果。</summary>
 <br>
 <div markdown="1">
 
@@ -55,7 +55,7 @@ Invalid Input
 ### 练习2：简单的素数判定（for循环嵌套条件语句）
 
 <details>
-<summary>输入一个正整数$n$，判断$n$是否为素数。</summary>
+<summary>输入一个正整数n，判断n是否为素数。</summary>
 <br>
 <div markdown="1">
 
@@ -80,10 +80,13 @@ No
 2. 1不是素数。
 3. 2是素数。
 
+</div>
+</details>
+
 ### 练习3：输出一个数的所有因数（for循环嵌套条件语句）
 
 <details>
-<summary>输入一个正整数$n$，输出$n$的所有真因数。</summary>
+<summary>输入一个正整数n，输出n的所有真因数。</summary>
 <br>
 <div markdown="1">
 
@@ -100,10 +103,13 @@ No
 **提示：**
 1. 真因数不包括自身。
 
+</div>
+</details>
+
 ### 练习4：输出一个数的所有素因数（for循环嵌套for循环语句）
 
 <details>
-<summary>输入一个正整数$n$，输出$n$的所有素因数。</summary>
+<summary>输入一个正整数n，输出n的所有素因数。</summary>
 <br>
 <div markdown="1">
 
@@ -116,4 +122,7 @@ No
 输出：
 2, 3
 ```
+
+</div>
+</details>
 
