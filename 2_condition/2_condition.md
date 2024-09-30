@@ -1,4 +1,4 @@
-# C语言-条件语句
+# Part2：C语言-条件语句
 
 Author: [sikesibian](https://github.com/sikesibian)
 
