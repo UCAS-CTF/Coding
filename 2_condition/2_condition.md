@@ -13,6 +13,7 @@ Author: [sikesibian](https://github.com/sikesibian)
 
 <details>
 <summary>输入一个整数，判断其是否为偶数。</summary>
+<br>
 <div markdown="1">
 
 输入数据范围：`[-10000, 10000]`
@@ -37,6 +38,7 @@ Author: [sikesibian](https://github.com/sikesibian)
 
 <details>
 <summary>输入一个年份，判断其是否为闰年。</summary>
+<br>
 <div markdown="1">
 
 输入数据范围：`[1900, 2100]`
@@ -66,6 +68,7 @@ Author: [sikesibian](https://github.com/sikesibian)
 
 <details>
 <summary>给出一个C语言程序，要求用户输入一个学生的成绩。根据输入的成绩，使用if语句嵌套判断学生的成绩等级，并输出对应的等级。</summary>
+<br>
 <div markdown="1">
 
 其中成绩等级划分如下：
@@ -113,6 +116,7 @@ if(a > 1){
 
 <details>
 <summary>卫语句阐释</summary>
+<br>
 <div markdown="1">
 
 卫语句（Guard Clause）是一种编程模式，它通过提前退出函数或方法来减少嵌套。在条件判断中，如果某个条件不满足，就立即返回或跳过后续的代码。这种方式可以使代码更加清晰和易于理解。
@@ -183,6 +187,7 @@ int main() {
 
 <details>
 <summary>练习：请将下述代码更改为一个卫语句版本</summary>
+<br>
 <div markdown="1">
 
 ```c
@@ -227,6 +232,7 @@ int main() {
 
 <details>
 <summary>switch语句阐释</summary>
+<br>
 <div markdown="1">
 
 switch语句是一种选择语句，它根据一个或多个条件判断，执行相应的代码块。它与if语句相比，具有更简洁的语法和更清晰、更易读的代码结构。
@@ -251,7 +257,7 @@ switch(expression) {
 提醒一些注意事项：
 1. 如果没有匹配的`case`，则执行`default`中的代码。
 2. 在每个`case`语句中，**必须包含`break`语句，否则会继续执行下一个`case`中的语句（当然这也可以作为一个技巧）**。
-3. 同一个`switch`语句中，`case`的值必须是常量表达式，并且不能是变量，而**一个`case`中可能有多个值，用逗号隔开即可**。
+3. 同一个`switch`语句中，`case`的值必须是常量表达式，并且不能是变量，而**一个`case`中只能有一个值，如果多个值则需要进行`case`穿透（见习题6）**。
 </div>
 </details>
 
@@ -259,6 +265,7 @@ switch(expression) {
 
 <details>
 <summary>请给出一个C语言程序，输入一个年份和一个月份，输出该月份对应的天数。</summary>
+<br>
 <div markdown="1">
 
 数据范围：`1900 <= year <= 2024`，`1 <= month <= 12`
@@ -277,6 +284,7 @@ switch(expression) {
 
 <details>
 <summary>使用`case`穿透的效果，简化C语言程序</summary>
+<br>
 <div markdown="1">
 
 前面提到，在`switch`语句中，如果没有匹配的`case`，则执行`default`中的代码。但是，如果在某个`case`中，没有包含`break`，则后续的`case`中的代码也会被执行。我们有时或许可以利用这样的特性，来简化代码。
@@ -326,6 +334,7 @@ int main() {
 
 <details>
 <summary>三目运算符阐释</summary>
+<br>
 <div markdown="1">
 
 三目运算符（Ternary Operator）也称为条件运算符，它允许在条件为真时返回一个值，否则返回另一个值。其基本使用方法如下：
@@ -352,6 +361,7 @@ printf("%d", y);
 
 <details>
 <summary>请给出一个C语言程序，完成一个简易比大小程序。</summary>
+<br>
 <div markdown="1">
 
 请仅使用三目运算符，完成满足下述功能的一个比大小程序：
@@ -395,6 +405,7 @@ printf("%d", y);
 
 <details>
 <summary>ITE表达式阐释</summary>
+<br>
 <div markdown="1">
 
 ITE表达式，全称是 if-then-else 表达式，是一种在编程语言中常见的条件表达式。它允许根据条件的真假来选择两个值中的一个。C语言中的三目运算符` ? : `就是一个ITE表达式的具体呈现。我们往往可以使用ITE表达式来简化条件判断。
@@ -471,6 +482,7 @@ int main() {
 
 <details>
 <summary>练习：修改代码，使用ITE表达式来实现条件语句</summary>
+<br>
 <div markdown="1">
 
 练习：请修改下面这个计算一个员工的奖金的程序，将其中的条件语句均使用ITE表达式来完成，其中根据员工的等级和业绩来确定奖金的百分比：
