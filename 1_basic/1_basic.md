@@ -11,6 +11,7 @@ Author: [sikesibian](https://github.com/sikesibian)
 
 C语言是一种计算机程序设计语言，由Dennis Ritchie于1972年编写，由Unix操作系统的作者 Ken Thompson 改进，由Bell Labs的贝尔实验室开发。它是一种**通用的、面向过程式的高级语言**。你可能觉得这里的概念又多又抽象，但是不要紧，让我们一起来慢慢体会什么是C语言吧！
 
+
 ## 0. 准备工作
 
 安装**gcc编译器**，在linux下使用apt命令即可，在windows下使用mingw-w64即可。
@@ -146,7 +147,7 @@ f = 3.141593
 #include <stdio.h>
 int main(){
     int a = 123;
-    // TODO
+    // TODO:
     // 分别输出a的十进制、八进制、十六进制
     return 0;
 }
@@ -175,7 +176,7 @@ a = 0x7b
 #include <stdio.h>
 int main(){
     int a;
-    // TODO
+    // TODO:
     // 输入一个数字并存储到a中
     printf("%d\n", a);
     return 0;
@@ -212,7 +213,7 @@ int main(){
 int main(){
     char a, b, c;
     printf("Please input 3 characters: ");
-    // TODO
+    // TODO:
     // 使用scanf()读取三个字符，分别存储到a、b、c中，观察输出结果
     printf("Your characters are %c, %c and %c\n", a, b, c);
     return 0;
@@ -261,7 +262,7 @@ int main(){
     float c = 3.14e-6;
     float d = 3.14e+6;
     float e = -3.14e-6;
-    // TODO
+    // TODO:
     // 以指数形式输出a
     // 以一般形式输出b，但是仅保留小数点后3位
     // 以一般形式输出c，右对齐并占用宽度为10，保留2位小数
@@ -320,7 +321,7 @@ short                                      |
 int main() {
     double a, b;
     scanf("%lf %lf", &a, &b);
-    // TODO
+    // TODO:
     // 输出a和b的加减乘除结果
     // 输出 a 除以 b整数部分 的结果
     // 输出 a整数部分 除以 b 的结果
