@@ -1,17 +1,3 @@
-<script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-<script>
-const config = {
-    startOnLoad:true,
-    theme: 'forest',
-    flowchart: {
-        useMaxWidth:false,
-        htmlLabels:true
-        }
-};
-mermaid.initialize(config);
-window.mermaid.init(undefined, document.querySelectorAll('.language-mermaid'));
-</script>
-
 # Part 3: C语言-循环语句
 
 Author: [Sikesibian](https://github.com/sikesibian)
