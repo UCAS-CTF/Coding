@@ -161,14 +161,14 @@ printf("%d %d %d\n", A, B, C);
 那么它的控制流图可以近似理解为：   
 ```mermaid
 graph LR;
-A[int A, B, C;...] -->|A == 10| B[ ]
-B -->|B > C| C[A = B]
-B -->|B <= C| D[A = C]
-C --> E[ ]
-D --> E
-E --> F[printf...]
-A -->|A != 10| F
-F --> G[End]
+    A[int A, B, C;...] -->|A == 10| B[ ]
+    B -->|B > C| C[A = B]
+    B -->|B <= C| D[A = C]
+    C --> E[ ]
+    D --> E
+    E --> F[printf...]
+    A -->|A != 10| F
+    F --> G[End]
 ```
 
 </div>
@@ -216,48 +216,48 @@ int main() {
 比如上述给出的控制流图：  
 ```mermaid
 graph LR;
-A[int A, B, C;...] -->|A == 10| B[ ]
-B -->|B > C| C[A = B]
-B -->|B <= C| D[A = C]
-C --> E[ ]
-D --> E
-E --> F[printf...]
-A -->|A != 10| F
-F --> G[End]
+    A[int A, B, C;...] -->|A == 10| B[ ]
+    B -->|B > C| C[A = B]
+    B -->|B <= C| D[A = C]
+    C --> E[ ]
+    D --> E
+    E --> F[printf...]
+    A -->|A != 10| F
+    F --> G[End]
 ```
 
 对它们进行编号：
 
 ```mermaid
 graph LR;
-A[Block 1] -->|A == 10| B[Block 2]
-B -->|B > C| C[Block 3]
-B -->|B <= C| D[Block 4]
-C --> E[Block 5]
-D --> E
-E --> F[Block 6]
-A -->|A != 10| F
-F --> G[End]
+    A[Block 1] -->|A == 10| B[Block 2]
+    B -->|B > C| C[Block 3]
+    B -->|B <= C| D[Block 4]
+    C --> E[Block 5]
+    D --> E
+    E --> F[Block 6]
+    A -->|A != 10| F
+    F --> G[End]
 ```
 
 
 其平坦化后即可以写为为：  
 ```mermaid
 graph TD;
-A[...] --> B[主分发器]
-B --> C1[Block 1]
-B --> C2[Block 2]
-B --> C3[Block 3]
-B --> C4[Block 4]
-B --> C5[Block 5]
-B --> C6[Block 6]
-C1 --> B
-C2 --> B
-C3 --> B
-C4 --> B
-C5 --> B
-C6 --> B
-B --> G[End]
+    A[...] --> B[主分发器]
+    B --> C1[Block 1]
+    B --> C2[Block 2]
+    B --> C3[Block 3]
+    B --> C4[Block 4]
+    B --> C5[Block 5]
+    B --> C6[Block 6]
+    C1 --> B
+    C2 --> B
+    C3 --> B
+    C4 --> B
+    C5 --> B
+    C6 --> B
+    B --> G[End]
 ```
 
 具体的代码可以写为：  
