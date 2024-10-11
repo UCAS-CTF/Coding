@@ -5,9 +5,12 @@ Author: [sikesibian](https://github.com/sikesibian)
 * TOC
 {:toc}
 
+<font color=HotPink size=5>！注意：点击小箭头可以展开</font>
+
 什么是C语言？
 
-C语言是一种计算机程序设计语言，由Dennis Ritchie于1972年编写，由Unix操作系统的作者 Ken Thompson 改进，由Bell Labs的贝尔实验室开发。C 语言是一种**通用的、面向过程式**的计算机程序设计语言。你可能觉得这里的概念又多又抽象，但是不要紧，让我们一起来慢慢体会什么是C语言吧！
+C语言是一种计算机程序设计语言，由Dennis Ritchie于1972年编写，由Unix操作系统的作者 Ken Thompson 改进，由Bell Labs的贝尔实验室开发。它是一种**通用的、面向过程式的高级语言**。你可能觉得这里的概念又多又抽象，但是不要紧，让我们一起来慢慢体会什么是C语言吧！
+
 
 ## 0. 准备工作
 
@@ -115,7 +118,7 @@ int main(){
     float d = 3.1415926;
     double e = 3.14159265358979323846;
     long double f = 3.141592653589793238462643383279502884197169399375105820974944592307816406286;
-    // TODO:
+    // TODO
     // 输出a、b、c、d、e、f
     return 0;
 }

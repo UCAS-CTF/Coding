@@ -5,6 +5,8 @@ Author: [Sikesibian](https://github.com/sikesibian)
 * TOC
 {:toc}
 
+<font color=HotPink size=5>！注意：点击小箭头可以展开</font>
+
 ## 1. for循环语句
 
 <details>
@@ -126,3 +128,23 @@ No
 </div>
 </details>
 
+
+### 练习5：输出一个数的所有素因数（for循环嵌套for循环语句）
+
+<details>
+<summary>输入一个正整数n，输出n的所有素因数。</summary>
+<br>
+<div markdown="1">
+
+输入数据范围：`1 <= n <= 100000`
+
+输入输出示例：
+```
+输入：
+12
+输出：
+2, 3
+```
+
+</div>
+</details>
