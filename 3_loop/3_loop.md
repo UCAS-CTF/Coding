@@ -1,3 +1,7 @@
+---
+mermaid: true
+---
+
 # Part 3: C语言-循环语句
 
 Author: [Sikesibian](https://github.com/sikesibian)
