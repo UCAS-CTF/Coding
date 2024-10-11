@@ -5,6 +5,8 @@ Author: [sikesibian](https://github.com/sikesibian)
 * TOC
 {:toc}
 
+<font color=HotPink size=5>！注意：点击小箭头可以展开</font>
+
 > 在完成本节之前，建议先完成**C语言基础语法、C语言赋值语句、C语言变量与运算符、C语言条件语句**的学习。
 
 ## 1. if语句
