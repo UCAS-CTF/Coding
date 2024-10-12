@@ -199,7 +199,7 @@ int main() {
 <br>
 <div markdown="1">
 
-**控制流平坦化（control flow flattening）** 实际上是一种作用于**控制流图**的**代码混淆**技术，其基本思想是**重新组织函数控制流图中基本块的关系**。细节内容可参考文献：[*Obfuscating C++ Programs via Control Flow Flattening*](<obfuscating c++ programs via control flow flattening.pdf>)  
+**控制流平坦化（control flow flattening）** 实际上是一种作用于**控制流图**的**代码混淆**技术，其基本思想是**重新组织函数控制流图中基本块的关系**。细节内容可参考文献：[*Obfuscating C++ Programs via Control Flow Flattening*](./ref/obfuscating c++ programs via control flow flattening.pdf)  
 
 > **代码混淆（Obfuscated Code）**：代码混淆是一种保护程序代码，如源代码（版权，漏洞分析难度等），的安全技术，**其将计算机程序的代码转换为一种功能上等价，但是阅读和理解更难的形式**。  
 
