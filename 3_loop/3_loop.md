@@ -161,7 +161,7 @@ printf("%d %d %d\n", A, B, C);
 那么它的控制流图可以近似理解为：   
 ```mermaid
 graph LR;
-A[int A, B, C;...] -->|A == 10| B[ ]
+A[int A, B, C...] -->|A == 10| B[ ]
 B -->|B > C| C[A = B]
 B -->|B <= C| D[A = C]
 C --> E[ ]
@@ -216,7 +216,7 @@ int main() {
 比如上述给出的控制流图：  
 ```mermaid
 graph LR;
-A[int A, B, C;...] -->|A == 10| B[ ]
+A[int A, B, C...] -->|A == 10| B[ ]
 B -->|B > C| C[A = B]
 B -->|B <= C| D[A = C]
 C --> E[ ]
