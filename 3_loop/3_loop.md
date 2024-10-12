@@ -209,11 +209,11 @@ int main() {
 
 ![](/bin/3_loop/img/3_5_1.svg)
 
-![](/bin/3_loop/img/3_5_2.svg)
+![](./img/3_5_2.svg)
 
 其平坦化后即可以写为为：  
 
-![](/bin/3_loop/img/3_5_3.png)
+![](./img/3_5_3.png)
 
 具体的代码可以写为：  
 ```c
