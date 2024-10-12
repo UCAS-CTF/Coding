@@ -162,6 +162,7 @@ printf("%d %d %d\n", A, B, C);
 
 ![](/bin/3_loop/img/3_5_1.svg)
 
+
 </div>
 </details>
 
@@ -207,8 +208,6 @@ int main() {
 比如上述给出的控制流图：  
 
 ![](/bin/3_loop/img/3_5_1.svg)
-
-对它们进行编号：
 
 ![](/bin/3_loop/img/3_5_2.svg)
 
