@@ -215,8 +215,6 @@ int main() {
 
 ![](/bin/3_loop/img/3_5_3.svg)
 
-<img src="/bin/3_loop/img/3_5_3.svg">
-
 具体的代码可以写为：  
 ```c
 # include <stdio.h>
