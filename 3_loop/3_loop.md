@@ -162,8 +162,6 @@ printf("%d %d %d\n", A, B, C);
 
 ![](/bin/3_loop/img/3_5_1.svg)
 
-
-
 </div>
 </details>
 
