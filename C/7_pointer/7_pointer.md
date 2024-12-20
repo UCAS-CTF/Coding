@@ -5,8 +5,6 @@ Author: [Sikesibian](https://github.com/sikesibian)
 * TOC
 {:toc}
 
-<font color=HotPink size=5>！注意：点击小箭头可以展开</font>
-
 ## 1. 指针基础
 
 <details>
@@ -31,6 +29,9 @@ Author: [Sikesibian](https://github.com/sikesibian)
 
 <details>
 <summary>编写程序，计算两个指针之间的距离。</summary>
+
+</div>
+</details>
 
 ### 练习1：变量交换函数（指针的基本操作）
 

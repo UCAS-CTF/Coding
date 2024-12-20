@@ -14,16 +14,16 @@
 - [函数（On working...）](./C/4_func/4_func)
 - [数组（On working...）](./C/5_array/5_array)
 - [结构体（On working...）](./C/6_struct/6_struct)
-- [指针](./C/7_pointer/7_pointer)
+- [指针（On working...）](./C/7_pointer/7_pointer)
 - [文件操作（On working...）](./C/8_file/8_file)
 - [链表、栈、队列（On working...）](./C/9_list/9_list)
 
 ### Python
 
-- [Python 基础](./Python/1_basic/1_basic)
-- [Python 数学计算](./Python/2_math/2_math)
-- [Python 机器学习](./Python/3_ml/3_ml)
-- [Python 爬虫](./Python/4_spider/4_spider)
+- [Python 基础（On working...）](./Python/1_basic/1_basic)
+- [Python 数学计算（On working...）](./Python/2_math/2_math)
+- [Python 机器学习（On working...）](./Python/3_ml/3_ml)
+- [Python 爬虫（On working...）](./Python/4_spider/4_spider)
 
 ## 2. 评测工具的下载与安装
 
