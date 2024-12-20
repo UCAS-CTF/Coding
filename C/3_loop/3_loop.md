@@ -228,12 +228,10 @@ int main(){
             case 1:
                 int A, B, C;
                 scanf("%d %d %d", &A, &B, &C);
-                if (A == 10) state = 2;       
-                else state = 6;
+                state = (A == 10) ? 2 : 6;
                 break;
             case 2:
-                if (B > C) state = 3;
-                else state = 4;
+                state = (B > C) ? 3 : 4;
                 break;
             case 3:
                 A = B;
