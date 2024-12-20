@@ -20,7 +20,10 @@
 
 ### Python
 
-On working...
+- [Python 基础](./Python/1_basic/1_basic)
+- [Python 数学计算](./Python/2_math/2_math)
+- [Python 机器学习](./Python/3_ml/3_ml)
+- [Python 爬虫](./Python/4_spider/4_spider)
 
 ## 2. 评测工具的下载与安装
 
