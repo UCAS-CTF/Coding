@@ -8,9 +8,15 @@
 
 ### C语言
 
-- [初识C语言](./1_basic/1_basic)
-- [条件语句](./2_condition/2_condition)
-- [循环语句](3_loop/3_loop.md)
+- [初识C语言](./C/1_basic/1_basic)
+- [条件语句](./C/2_condition/2_condition)
+- [循环语句](./C/3_loop/3_loop)
+- [函数（On working...）](./C/4_func/4_func)
+- [数组（On working...）](./C/5_array/5_array)
+- [结构体（On working...）](./C/6_struct/6_struct)
+- [指针](./C/7_pointer/7_pointer)
+- [文件操作（On working...）](./C/8_file/8_file)
+- [链表、栈、队列（On working...）](./C/9_list/9_list)
 
 ### Python
 
