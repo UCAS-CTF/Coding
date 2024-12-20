@@ -61,6 +61,7 @@ Hello! I'm UCAS CTF, an 18-year-old male from Beijing, currently majoring in Com
 ### 练习3：条件、循环与运算符
 
 > 请学习 Python 中 **`print` 的 `end` 选项和 `sep` 选项**
+> 
 > 请学习 Python 中的 **条件语句**（`if`、`elif`、`else`）、**循环语句**（`for i in range(n)`、`while`） 和 **算术运算符**（`+`、`-`、`*`、`/`、`//`、`%`、`**`）。
 
 <details>
@@ -128,7 +129,9 @@ print(
 <div markdown="1">
 
 > **`int`函数**，**`hex`函数** 和 **`bin`函数**，**`ord`函数** 和 **`chr`函数**。
+> 
 > 学习 **列表类型（`list`）** 和字符串的 **`join` 方法与`zfill`方法**。
+> 
 > 学习 **`bytes` 函数** 将整数列表转换为 `bytes` 类型。
 
 输入上接收一串二进制数据（不以 `0b` 开头），将它转换为十六进制数据，和可见字符串，并以一定格式输出：
