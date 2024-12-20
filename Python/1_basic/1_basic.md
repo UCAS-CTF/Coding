@@ -58,11 +58,222 @@ Hello! I'm UCAS CTF, an 18-year-old male from Beijing, currently majoring in Com
 </div>
 </details>
 
-### 练习3：条件、循环与运算符
+### 练习3：条件语句、运算符
+
+> 请学习 Python 中的 **运算符**。
+
+<details>
+<summary>（点击展开）简易计算器</summary>
+<br>
+<div markdown="1">
+
+> 请学习 Python 中的 **条件语句**（`if`、`elif`、`else`）、基本的**运算符**
+> 
+> - `+`：加法，`-`：减法，`*`：乘法，`/`：除法，`//`：取商，`%`：取余，`**`：指数。
+> - `==`：判断两个数是否相等，`!=`：判断两个数是否不相等。
+> - `>`：判断一个数是否大于另一个数，`>=`：判断一个数是否大于等于另一个数，`<`：判断一个数是否小于另一个数，`<=`：判断一个数是否小于等于另一个数。
+> - `and`：逻辑与，`or`：逻辑或，`not`：逻辑非。
+> - `is`：判断两个变量是否指向同一个对象，`is not`：判断两个变量是否指向不同的对象。（常见用法：`a is not None`）
+
+补充完整下述代码：
+```python
+a = int(input("Please input number a: ").strip())
+b = int(input("Please input number b: ").strip())
+op = input("Please input operation: ").strip()
+
+if op == "+":
+    print("Performing Addition ...")
+    print(f"{a} {op} {b} = {a + b}")
+elif op == "-":
+    print("Performing Subtraction ...")
+    # TODO
+elif op == "*":
+    print("Performing Multiplication ...")
+    # TODO
+elif op == "/":
+    print("Performing Division ...")
+    print("I will give you the remainder and quotient.")
+    # TODO
+elif op == "**":
+    print("Performing Exponentiation ...")
+    # TODO
+else:
+    print("Invalid Operation!")
+```
+
+注：详细输出格式请看下述示例：
+
+输入输出示例：
+
+```
+输入：
+Please input number a: 5
+Please input number b: 3
+Please input operation: +
+输出：
+Performing Addition ...
+5 + 3 = 8
+```
+
+```
+输入：
+Please input number a: 5
+Please input number b: 0
+Please input operation: /
+输出：
+Performing Division ...
+Invalid Operation!
+```
+
+```
+输入：
+Please input number a: 5
+Please input number b: 3
+Please input operation: /
+输出：
+Performing Division ...
+I will give you the remainder and quotient.
+5 / 3 = 1 ... 2
+```
+
+
+</div>
+</details>
+
+### 练习4.1：列表与元组
+
+> 请学习 Python 中的 **列表类型 list** 和 **元组类型 tuple** 。
+
+<details>
+<summary>（点击展开）尝试给出并理解下述代码的运行结果</summary>
+<br>
+<div markdown="1">
+
+**对于列表类型，我们常用的运算符有**：
+
+- `+`：列表的连接，`*`：列表的复制
+- `in`：判断元素是否在列表中
+- `[::]`：切片
+- `sort`：排序，`sorted`：排序后生成新列表
+- `len`：获取列表的长度
+- `max`：获取列表中的最大值，`min`：获取列表中的最小值
+- `sum`：求和
+- `*`：解包
+- `count`：统计元组中某个元素出现的次数
+- `index`：获取元组中某个元素在元组中的位置
+- `append`：在列表末尾添加元素
+- `remove`：删除列表中某个元素
+- `insert`：在列表中指定位置插入元素
+- `reverse`：反转列表
+- `extend`：在列表末尾扩展多个元素
+
+```python
+a = [1, 5, 6, 2, 3, 4, 7, 8, 9, 10]
+print(sum(a))
+print(len(a + a + a * 2))
+print(a[-1])
+print(a[:-1])
+print(a[::-1])
+print(sorted(a))
+a = [1, 5, 6, 2, 3, 4, 7, 8, 9, 10]
+print(a); print(a.sort()); print(a)
+print(max(a) - min(a))
+print(a.count(1))
+print(a.index(1))
+a.extend([11, 12, 13, 14, 15])
+a.append(16)
+a.append(a)
+print(a)
+a.remove(1)
+print(a)
+a.insert(0, 1)
+print(a)
+a.reverse()
+print(a)
+print(a[0])
+print(a[0][0])
+```
+
+**思考**：
+- 如何构造一个全部由 1 组成的长为 `n` 的列表？
+- 如何将一个列表倒序？
+- `sort` 和 `sorted` 的区别？
+
+**对于元组类型，我们常用的运算符有**：
+- `+`：元组的连接，`*`：元组的复制
+- `in`：判断元素是否在元组中
+- `*`：解包
+- `len`：获取元组的长度
+- `max`：获取元组中的最大值，`min`：获取元组中的最小值
+- `sum`：求和
+- `count`：统计元组中某个元素出现的次数
+- `index`：获取元组中某个元素在元组中的位置
+
+```python
+a = (1, 5, 6, 2, 3, 4, 7, 8, 9, 10)
+print(sum(a))
+print(len(a + a + a * 2))
+print(a[-1])
+print(a[:-1])
+print(a[::-1])
+print(sorted(a), type(sorted(a)))
+print(max(a) - min(a))
+print(a.count(1))
+print(a.index(1))
+```
+
+思考：
+- 元组能否有 `a.sort()` ？
+
+
+</div>
+</details>
+
+### 练习4.2：字典
+
+> 请学习 Python 中的 **字典类型 dict**。
+
+<details>
+<summary>（点击展开）尝试给出并理解下述代码的运行结果</summary>
+<br>
+<div markdown="1">
+
+</div>
+</details>
+
+### 练习4.3：集合
+
+> 请学习 Python 中的 **集合类型 set**。
+
+<details>
+<summary>（点击展开）尝试给出并理解下述代码的运行结果</summary>
+<br>
+<div markdown="1">
+
+</div>
+</details>
+
+### 练习4.4：打包、解包
+
+> 请学习 Python 中的 **打包、解包**。
+>
+> - `*`，`**`
+> - `zip`，`enumerate`，`map`，`filter`，`reduce`
+
+
+<details>
+<summary>（点击展开）尝试给出并理解下述代码的运行结果</summary>
+<br>
+<div markdown="1">
+
+</div>
+</details>
+
+### 练习5：循环语句
 
 > 请学习 Python 中 **`print` 的 `end` 选项和 `sep` 选项**
 > 
-> 请学习 Python 中的 **条件语句**（`if`、`elif`、`else`）、**循环语句**（`for i in range(n)`、`while`） 和 **算术运算符**（`+`、`-`、`*`、`/`、`//`、`%`、`**`）。
+> 请学习 Python 中的 **条件语句**（`if`、`elif`、`else`）、**循环语句**（`for i in range(n)`、`while`） 。
 
 <details>
 <summary>（点击展开）完全 k 方数</summary>
@@ -83,7 +294,7 @@ while i ** 2 <= n:
 
 请设计一个 Python 程序，接收一个正整数 n 和 正整数 k，输出 n 的完全 k 方数。
 
-额外的思考：阅读下面的几种完全平方数的实现并对实现方法和效率问题进行思考。
+**额外的思考：阅读下面的几种完全平方数的实现并对实现方法和效率问题进行思考**。
 
 注：**海象运算符**：
 
@@ -121,11 +332,12 @@ print(
 </div>
 </details>
 
-### 练习4：类型转换（数字、进制数字、字符、字节类型）
+
+### 练习6：类型转换（数字、进制数字、字符、字节类型）
 
 > 请学习 **`int`函数**，**`hex`函数** 和 **`bin`函数**，**`ord`函数** 和 **`chr`函数**。
 > 
-> 请学习 **列表类型（`list`）** 和字符串的 **`join` 方法与`zfill`方法**。
+> 请学习字符串的 **`join` 方法与`zfill`方法**。
 > 
 > 请学习 **`bytes` 函数** 将整数列表转换为 `bytes` 类型。
 
@@ -157,6 +369,16 @@ b'F:\xd3\xb3A\x83\xe4\xb0R\xf7QC\xc2u%U\x1e\xa7\x8cH\xc8\xaa\xfa\xe5c\x8d\x9c\xb
 </div>
 </details>
 
-<!-- ## 2. 函数与模块
+## 2. 函数与模块
 
-### 练习5：函数与模块 -->
+### 练习7：函数的定义
+
+> 请学习 Python 中的 **函数定义**。
+
+<details>
+<summary>（点击展开）</summary>
+<br>
+<div markdown="1">
+
+</div>
+</details>
