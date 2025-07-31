@@ -94,6 +94,13 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(text => {
                 // 使用 marked.js 解析
+                // 设置引用链接的解析，在前添加 "/Coding" 前缀
+                text = text.replace(/!\[([^\]]*)\]\((?!http)([^)]+)\)/g, (match, alt, src) => {
+                    if (src.startsWith('/')) {
+                        src = src.replace('/', '/Coding/');
+                    }
+                    return `![${alt}](/Coding/${src})`;
+                });
                 contentContainer.innerHTML = marked.parse(text);
 
                 // // 渲染数学公式
