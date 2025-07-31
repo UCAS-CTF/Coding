@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     if (src.startsWith('/')) {
                         src = src.replace('/', '/Coding/');
                     }
-                    return `![${alt}](/Coding/${src})`;
+                    return `![${alt}](${src})`;
                 });
                 contentContainer.innerHTML = marked.parse(text);
 
