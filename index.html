@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UCAS本科CTF竞赛编程练习平台</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/github-dark.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css">
+    <link rel="stylesheet" href="./src/css/markdownstyle.css">
+</head>
+<body>
+    <!-- 侧边导航 -->
+    <aside class="sidebar">
+        <div class="logo">
+            <h1>UCAS本科CTF编程练习平台</h1>
+            <p>本平台主要帮助大家入门编程语言的学习，题目难度均为初等，如需更进阶的练习，同学们可以在洛谷、力扣或者牛客等OJ进行练习。</p>
+            <a class="wikilink" href="https://ucas-ctf.github.io/">回到wiki</a>
+        </div>
+        
+        <div class="nav-section">
+            <h3><i>📚</i> C语言练习</h3>
+            <ul class="nav-links">
+                <li><a href="#" class="active">初识C语言</a></li>
+                <li><a href="#">条件语句</a></li>
+                <li><a href="#">循环语句</a></li>
+                <li><a href="#" class="coming-soon">函数</a></li>
+                <li><a href="#" class="coming-soon">数组</a></li>
+                <li><a href="#" class="coming-soon">结构体</a></li>
+                <li><a href="#">指针</a></li>
+                <li><a href="#" class="coming-soon">文件操作</a></li>
+                <li><a href="#" class="coming-soon">链表、栈、队列</a></li>
+            </ul>
+        </div>
+        
+        <div class="nav-section">
+            <h3><i>🐍</i> Python练习</h3>
+            <ul class="nav-links">
+                <li><a href="#">Python基础</a></li>
+                <li><a href="#" class="coming-soon">Python数学计算</a></li>
+                <li><a href="#" class="coming-soon">Python机器学习</a></li>
+                <li><a href="#" class="coming-soon">Python爬虫</a></li>
+            </ul>
+        </div>
+<!--         
+        <div class="nav-section">
+            <h3><i>🔧</i> 工具与资源</h3>
+            <ul class="nav-links">
+                <li><a href="#">评测工具安装</a></li>
+                <li><a href="#">学习资源</a></li>
+                <li><a href="#">竞赛指南</a></li>
+                <li><a href="#">常见问题</a></li>
+            </ul>
+        </div> -->
+    </aside>
+    
+    <main>
+        <!-- <div class="header">
+            <h2></h2>
+        </div> -->
+        <main id="content-container" class="markdown-body">
+        </main>
+        <div id="toc-wrapper">
+            <nav id="toc-container">
+                <div class="toc-header">
+                    <h3>目录</h3>
+                    </div>
+                <ul id="toc-list"></ul>
+            </nav>
+        </div>
+    </main>
+
+    <div class="footer">
+        <p>UCAS本科CTF竞赛小组 © 2025 | <a class="wikilink" href="https://ucas-ctf.github.io/">回到wiki</a>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script src="./src/js/script.js"></script>
+    <script>
+        // 初始化代码高亮
+        hljs.highlightAll();
+        
+        // 切换解决方案显示
+        function toggleSolution(id) {
+            const element = document.getElementById(id);
+            element.classList.toggle('open');
+            
+            const button = event.currentTarget;
+            if (element.classList.contains('open')) {
+                button.innerHTML = '<i>👁️</i> 隐藏内容';
+            } else {
+                button.innerHTML = '<i>👁️</i> 显示内容';
+            }
+        }
+        
+        // 模拟动态添加内容
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                // 移除所有active类
+                document.querySelectorAll('.nav-links a').forEach(a => {
+                    a.classList.remove('active');
+                });
+                
+                // 添加active类到当前链接
+                this.classList.add('active');
+                
+                // // 更新标题
+                // document.querySelector('.header h2').textContent = this.textContent;
+            });
+        });
+    </script>
+</body>
+</html>

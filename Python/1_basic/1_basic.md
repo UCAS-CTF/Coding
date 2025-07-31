@@ -2,8 +2,8 @@
 
 Author: [sikesibian](https://github.com/sikesibian)
 
-* TOC
-{:toc}
+<!-- * TOC
+{:toc} -->
 
 > 对于 Python 我们将忽略最基础的内容。最基本的语法请朋友们根据相关资料（如 菜鸟教程、莫烦Python）进行学习。当然在每个板块之前我们也会再强调朋友们需要学习的基本知识。
 
