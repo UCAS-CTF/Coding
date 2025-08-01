@@ -513,7 +513,7 @@ body {
     box-shadow: 0 2px 0 rgba(33, 145, 81, 0.8);
 }
 
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .container {
         grid-template-columns: 1fr;
     }
@@ -526,6 +526,9 @@ body {
     }
     
     .stats {
+        grid-template-columns: 1fr;
+    }
+    body {
         grid-template-columns: 1fr;
     }
 }
