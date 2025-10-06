@@ -248,3 +248,106 @@ a(9) = 94, b(9) = 113
 </div>
 </details>
 
+## 4. main函数
+
+> 注：结合数组和指针学习会理解得更加透彻。
+
+<details>
+<summary>main函数的特殊地位</summary>
+<br>
+<div markdown="1">
+
+`main`函数是C程序的入口点，具有以下特点：
+- 程序执行的起点和终点
+- 可以接受命令行参数
+- 返回值为`int`类型，表示程序退出状态
+
+### main函数的两种标准形式：
+```c
+// 无参数版本
+int main(void) {
+    return 0;
+}
+
+// 带参数版本  
+int main(int argc, char *argv[]) {
+    return 0;
+}
+```
+
+</div>
+</details>
+
+### 练习6：命令行参数处理
+
+<details>
+<summary>编写程序计算命令行参数的和</summary>
+<br>
+<div markdown="1">
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    // 实现：计算所有命令行参数（整数）的和
+    // 提示：使用atoi函数将字符串转换为整数
+    
+    return 0;
+}
+```
+
+使用示例：
+```bash
+# 编译
+gcc -o sum main.c
+
+# 运行
+./sum 10 20 30 40
+```
+输出：
+```
+total：100
+```
+
+要求：
+1. 处理参数数量不正确的情况（至少需要2个数字）
+2. 输出清晰的结果信息
+
+</div>
+</details>
+
+### 练习7：简单的命令行计算器
+
+<details>
+<summary>实现支持加减乘除的命令行计算器</summary>
+<br>
+<div markdown="1">
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(int argc, char *argv[]) {
+    // 实现格式：./calc 运算符 数字1 数字2
+    // 支持的运算符：+ - * /
+    
+    return 0;
+}
+```
+
+使用示例：
+```bash
+./calc + 15 25      # 输出：15 + 25 = 40
+./calc * 8 7        # 输出：8 * 7 = 56
+./calc / 100 4      # 输出：100 / 4 = 25
+```
+
+要求：
+1. 检查参数数量（必须为4个）
+2. 处理除零错误
+3. 支持浮点数运算
+4. 处理无效运算符的情况
+
+</div>
+</details>
